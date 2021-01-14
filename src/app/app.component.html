@@ -1,0 +1,13 @@
+<p>
+	Start editing to see some magic happen :)
+</p>
+<button [routerLink]="['/',{outlets:{display:'displ'}}]">displ app comp</button><br>
+<button [routerLink]="['/view1',{outlets:{display:['testparam',{outlets:{display3:'nestedtestparam'}}]}}]">view1</button> <br>
+<!-- <button [routerLink]="['/',{outlets:{outletView2:'view2'}}]">view2</button> <br> -->
+<button [routerLink]="['/45/special']">special</button><br>
+<!-- <button [routerLink]="['/view3']">view3</button> -->
+<button [routerLink]="['l1/l2/l3/view3']">view3</button>
+<!-- <button [routerLink]="['/(outletView2:view2/50)']">view2 display id</button> <br> -->
+<router-outlet></router-outlet>
+<router-outlet name="display"></router-outlet>
+<!-- <router-outlet name="outletView2"></router-outlet> -->
